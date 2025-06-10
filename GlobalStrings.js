@@ -1,0 +1,18 @@
+exports.Messages = {
+    VALID_PASSWORD_MESSAGE: "Password must be more than 8 characters.",
+    INVALID_REQUEST: "Invalid Request",
+    NO_USERS: "Users not found",
+    UPDATE_SUCCESS: "Updated successfully",
+    USER_DELETE_SUCCESS: "User deleted successfully",
+    USER_DELETE_FAIL: "User deletion failed",
+    LOGIN_SUCCESS: "Login success",
+    INCORRECT_PASS: "Incorrect password",
+    SESSION_EXP: "User session expired",
+    SOMETHING_WENT_WRONG: "Something Went Wrong",
+    NO_FILE_PROVIDED: "No file provided",
+    CSV_ALLOW_ERROR: "Only CSV files are allowed",
+    FILE_UPLOAD_ERROR: "'Error uploading the file'",
+    FILE_PROCESSING_ERROR: "Error processing CSV file",
+    COUNT_RECORD_ERROR: "Error counting records",
+    NO_MATCHING_RECORDS: "No matching records found",
+}
