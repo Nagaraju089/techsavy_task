@@ -61,7 +61,7 @@ module.exports = {
                 }
             }
             else {
-                return res.status(400).send({ status: 400, message: GlobalStrings.Messages.UPDATE_SUCCESS });
+                return res.status(400).send({ status: 400, message: GlobalStrings.Messages.UDATE_FAIL });
             }
         } catch (err) {
             return res.status(500).send({ status: 500, message: err.message });
@@ -71,12 +71,7 @@ module.exports = {
     deleteUser: async (req, res) => {
         try {
             let [userState, userData] = await UserService.delete(req.params.user_id);
-            if (userState) {
-                return res.status(200).send({ status: 200, message: GlobalStrings.Messages.USER_DELETE_SUCCESS });
-            }
-            else {
-                return res.status(200).send({ status: 200, message: GlobalStrings.Messages.USER_DELETE_FAIL });
-            }
+            return res.status(200).send({ status: 200, message: userData });
         } catch (err) {
             return res.status(500).send({ status: 500, message: err.message });
         }
@@ -99,7 +94,7 @@ module.exports = {
                         });
                     }
                     else {
-                        return res.status(200).send({ status: 200, message: GlobalStrings.Messages.INCORRECT_PASS });
+                        return res.status(401).send({ status: 401, message: GlobalStrings.Messages.INCORRECT_PASS });
                     }
                 }
                 else {

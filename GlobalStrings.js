@@ -3,6 +3,7 @@ exports.Messages = {
     INVALID_REQUEST: "Invalid Request",
     NO_USERS: "Users not found",
     UPDATE_SUCCESS: "Updated successfully",
+    UDATE_FAIL: "Update failed",
     USER_DELETE_SUCCESS: "User deleted successfully",
     USER_DELETE_FAIL: "User deletion failed",
     LOGIN_SUCCESS: "Login success",
@@ -15,4 +16,5 @@ exports.Messages = {
     FILE_PROCESSING_ERROR: "Error processing CSV file",
     COUNT_RECORD_ERROR: "Error counting records",
     NO_MATCHING_RECORDS: "No matching records found",
+    USER_ADD_SUCCESS: "User added successfully"
 }

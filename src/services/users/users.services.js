@@ -5,7 +5,7 @@ module.exports = {
     insertData: async function (obj) {
         try {
             const models = getModels();
-            let userData = await models.findAll({ user_name: obj.user_name });
+            let userData = await models.Users.findAll({ where: {user_name: obj.user_name } });
             if(userData.length > 0) {
                 return [false, 'User already exists'];
             }
